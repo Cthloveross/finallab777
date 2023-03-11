@@ -49,6 +49,10 @@ public class Note {
         this.version = version;
     }
 
+
+
+
+
     public static Note fromJSON(String json) {
         return new Gson().fromJson(json, Note.class);
     }
