@@ -123,8 +123,8 @@ public class NoteRepository {
         // You may (but don't have to) want to cache the LiveData's for each title, so that
         // you don't create a new polling thread every time you call getRemote with the same title.
         // You don't need to worry about killing background threads.
-        //return realNoteData;
-        throw new UnsupportedOperationException("Not implemented yet");
+        return realNoteData;
+        //throw new UnsupportedOperationException("Not implemented yet");
 
     }
 
@@ -138,6 +138,6 @@ public class NoteRepository {
 
             api.putNote(note.title, RequestBody.create(JSON, json.toString()));
         });
-        throw new UnsupportedOperationException("Not implemented yet");
+        //throw new UnsupportedOperationException("Not implemented yet");
     }
 }
